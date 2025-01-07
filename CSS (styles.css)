@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Staatliches&family=Press+Start+2P&display=swap');
+
+body {
+  font-family: 'Rock Salt', cursive; /* Fun, quirky font */
+  background: linear-gradient(45deg, #ff007f, #00ffff, #ffab00); /* Wild colors */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+.container {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 400px;
+  border: 5px solid #ff007f;
+  transform: rotate(-4deg);
+  font-family: 'Staatliches', sans-serif; /* More bold and futuristic look */
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ff007f;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', cursive; /* Retro gaming font */
+}
+
+.input-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 12px;
+  border: 3px solid #ff007f;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #ff007f;
+  background-color: #00ffff;
+  text-transform: uppercase;
+}
+
+#addTaskButton {
+  padding: 12px;
+  background-color: #ff007f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#addTaskButton:hover {
+  background-color: #00ffff;
+  transform: scale(1.1);
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #ff007f;
+  margin-bottom: 10px;
+  border: 3px solid #ff007f;
+  border-radius: 12px;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: rotate(4deg);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.complete {
+  text-decoration: line-through;
+  color: #00ffff;
+}
+
+button.delete {
+  background: #00ffff;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button.delete:hover {
+  background: #ff007f;
+}
+
+button.delete:active {
+  transform: scale(0.95);
+}
